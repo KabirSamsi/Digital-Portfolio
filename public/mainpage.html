@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Art Digital Portfolio</title>
+    <link rel = stylesheet href = "portfolio.css" />
+  </head>
+  <body>
+  <heading>
+    <h1 id = "heading">Cycle 1 Digital Art Portfolio</h1>
+    <h4 id = "subheading">View my projects!</h4>
+    <p id = "p">Potential searches: my sketchbook cover, color research handout and my color notes. You can also view a list of my projects by clicking the second button below.</p>
+  </heading>
+    <search>
+  <input type = "text" id = "searchBar"/>
+  <button id = "button">Click to search</button>
+  <br /><br />
+  <button id = "searches">Click to view a list of my projects</button>
+  <br /><br />
+  </search>
+    <colors>
+    <h4 id = "h4">You can change the color of the elements on this page</h4>
+    <input type = "text" id = "changeColor" />
+  <button id = "colorButton">Click to change heading color</button>
+  <br /><br />
+  <input type = "text" id = "changesubColor" />
+  <button id = "thirdButton">Click to change sub-heading color</button>
+  <br /><br />
+  <input type = "text" id = "changePcolor" />
+  <button id = "fourthButton">Click to change the first message's color</button>
+  <br /><br />
+  <input type = "text" id = "change4Color" />
+  <button id = "button5">Click to change the second message's color</button>
+  <br /><br />
+  <input type = "text" id = "change5Color" />
+  <button id = "button6">Click to change the third message's color</button>
+  <br /><br />
+  <button id = "allButton">Click to change all the colors at once</button>
+  <br /><br />
+  <button id = "reset">Click to reset all colors</button>
+  <br /><br />
+  <h4 id = "text3">Classic Color Combinations</h4>
+  <button id = 'patriot'>The Patriot</button>
+  <button id = 'ocean'>The Ocean</button>
+  <button id = 'forest'>The Forest</button>
+  <button id = 'fire'>The Fire</button>
+  <button id = 'blizzard'>The Blizzard</button>
+  </colors>
+  <script>
+
+//Gains access to all HTML elements on the page
+const input = document.getElementById('searchBar');
+const button = document.getElementById('button');
+
+const color =  document.getElementById('changeColor');
+const colorButton = document.getElementById('colorButton');
+const heading = document.getElementById('heading');
+
+const colorButton2 = document.getElementById('thirdButton');
+const subheading = document.getElementById('subheading');
+const color2 =  document.getElementById('changesubColor');
+
+const colorButton3 = document.getElementById('fourthButton');
+const p = document.getElementById('p');
+const color3 =  document.getElementById('changePcolor');
+
+const colorButton4 = document.getElementById('button5');
+const h4 = document.getElementById('h4');
+const color4 =  document.getElementById('change4Color');
+
+const colorButton5 = document.getElementById('button6');
+const text3 = document.getElementById('text3');
+const color5 =  document.getElementById('change5Color');
+
+const allButton = document.getElementById('allButton');
+const reset = document.getElementById('reset');
+
+const patriot = document.getElementById('patriot');
+const forest = document.getElementById('forest');
+const fire = document.getElementById('fire');
+const blizzard = document.getElementById('blizzard');
+
+const searches = document.getElementById('searches');
+
+//Creates some title names
+patriot.title = 'Creates a color scheme resembling the American flag';
+ocean.title = "Creates a scheme of multiple shades of blue";
+forest.title = "Creates a scheme of colors resembling foliage";
+fire.title = 'Creates a scheme of warm colors';
+blizzard.title = 'Makes all elements invisible';
+allButton.title = "Change the color of all elements";
+reset.title = "Changes all elements to black";
+button.title = "Search my projects";
+colorButton.title = "Change heading color";
+colorButton2.title = "Change sub-heading color";
+colorButton3.title = "Change the first message color";
+colorButton4.title = 'Change the second message color';
+colorButton5.title = 'Change the third message color';
+searches.title = "View an entire list of my projects";
+
+//Allows users to style the document with any color they want
+searches.addEventListener('click', () => {
+  document.write('<h1>Project List</h1>')
+  document.write('<ul><li>Sketchbook Cover</li><li>Color Research Handout</li><li>Color Notes</li></ul>')
+  document.write('<a href = "Digital Portfolio Main Page.html"><p>Click this to return to the home page.</p></a>')
+
+
+})
+
+colorButton.addEventListener('click', () => {
+  heading.style.color = color.value;
+
+})
+
+colorButton2.addEventListener('click', () => {
+  subheading.style.color = color2.value;
+
+})
+
+colorButton3.addEventListener('click', () => {
+  p.style.color = color3.value
+
+})
+
+colorButton4.addEventListener('click', () => {
+  h4.style.color = color4.value
+
+})
+
+colorButton5.addEventListener('click', () => {
+  text3.style.color = color5.value
+
+})
+
+allButton.addEventListener('click', () => {
+  h4.style.color = color4.value;
+  p.style.color = color3.value;
+  heading.style.color = color.value;
+  subheading.style.color = color2.value;
+  text3.style.color = color5.value
+
+})
+
+
+reset.addEventListener('click', () => {
+  h4.style.color = "black";
+  p.style.color = "black";
+  heading.style.color = 'black';
+  subheading.style.color = "black";
+  text3.style.color = "black";
+  changeColor.value = "";
+  changesubColor.value = "";
+  changePcolor.value = "";
+  change4Color.value = "";
+  change5Color.value = "";
+
+})
+
+patriot.addEventListener('click', () => {
+  heading.style.color = "blue";
+  subheading.style.color = "red";
+  p.style.color = 'darkgrey';
+  h4.style.color = "red";
+  text3.style.color = "darkgrey";
+  changeColor.value = "";
+  changesubColor.value = "";
+  changePcolor.value = "";
+  change4Color.value = "";
+  change5Color.value = "";
+
+})
+
+ocean.addEventListener('click', () => {
+  h4.style.color = "indigo";
+  p.style.color = "blue";
+  heading.style.color = 'darkblue';
+  subheading.style.color = "turquoise";
+  text3.style.color = "#41a6f4";
+  changeColor.value = "";
+  changesubColor.value = "";
+  changePcolor.value = "";
+  change4Color.value = "";
+  change5Color.value = "";
+
+})
+
+forest.addEventListener('click', () => {
+  h4.style.color = "brown";
+  p.style.color = "green";
+  heading.style.color = 'darkgreen';
+  subheading.style.color = "lightgreen";
+  text3.style.color = "#a3f441";
+  changeColor.value = "";
+  changesubColor.value = "";
+  changePcolor.value = "";
+  change4Color.value = "";
+  change5Color.value = "";
+
+})
+
+fire.addEventListener('click', () => {
+  h4.style.color = "darkorange";
+  p.style.color = "orange";
+  heading.style.color = 'red';
+  subheading.style.color = "#f4bf42";
+  text3.style.color = "#f4c441";
+  changeColor.value = "";
+  changesubColor.value = "";
+  changePcolor.value = "";
+  change4Color.value = "";
+  change5Color.value = "";
+
+})
+
+blizzard.addEventListener('click', () => {
+  h4.style.color = "white";
+  p.style.color = "white";
+  heading.style.color = 'white';
+  subheading.style.color = "white";
+  text3.style.color = "white";
+  changeColor.value = "";
+  changesubColor.value = "";
+  changePcolor.value = "";
+  change4Color.value = "";
+  change5Color.value = "";
+
+})
+
+//Creates an array of potential search commands
+let projects = ['sketchbook', 'sketchbook cover', 'color research', 'color research handout', 'why is color important?', 'why is color important?'];
+
+
+//Processes search commands to link to various sites
+button.addEventListener('click', () => {
+
+    if (input.value.toLowerCase() === "sketchbook" || input.value.toLowerCase() === "sketchbook cover") {
+        document.write('<h1>Sketchbook Cover</h1>')
+        document.write('<img src = "sketchbook.jpg" width="40%" height="75%" />')
+        document.write('<br />')
+        document.write('<p> I drew this image on a piece of recycled paper, which I then stapled to my sketchbook. I wanted to put a lot of color into it, so I colored the entire image, while adding things to the image which personalized it. In the center, I drew a hacker. This is because I enjoy studying computers and I thought this would look nice as an image. Around the hacker, I drew several colored lines, which I filled with 0s and 1s. Translated from binary, they are the passcode to my phone. I did this just for fun, and because I thought that it would give a nice effect. </p>')
+        document.write('<a href = "Digital Portfolio Main Page.html"><p>Click this to return to the home page.</p></a>')
+
+    } else if (input.value.toLowerCase() === "color research" || input.value.toLowerCase() === "color research handout") {
+        document.write('<h1>Color Research</h1>')
+        document.write('<img src = "color research 1.png" width="50% height="50%"/>')
+        document.write('<br />')
+        document.write("<p>This project was done to help us increase our understanding of colors, as well as for us to exercise our own creativity in observing colors and nothing their characteristics. We had to analyze all kinds of aspects of our color, from things such as its position on the color wheel to its hues, tints and tones. After analyzing all of these aspects, we used our creativity and imagination to name these colors what they reminded us of. I named my color 'Mystic Blue' because the tones reminded me of a mysterious shade of the color blue. Originally, I named it 'Transitional Blue', as it served as a transition from dark to light blue, but finding this name too boring, I renamed the color. </p>")
+        document.write('<br />')
+        document.write('<a href = "https://docs.google.com/presentation/d/1A07DW1CRJh98aEh_Dmd07pbfIMypb4IH58xiKWMx4qs/comment#slide=id.p" target="_blank"><p>Click this to view the entire presentation.</p></a>')
+        document.write('<a href = "Digital Portfolio Main Page.html"><p>Click this to return to the home page.</p></a>')
+
+    } else if (input.value.toLowerCase() === "why is color important" || input.value.toLowerCase() === "color notes") {
+        document.write('<h1>Color Notes</h1>')
+        document.write('<img src = "WhyIsColorImportant.jpg" width="40%"height="75%"/>')
+        document.write('<br />')
+        document.write('<p>This was our first project. In the first cycle, we were mainly studying color, and so it was essential that we understood what it was and why it is important. During Ms. Asha\' s presentation about color, we took notes cand then laterm ade a writeup about what color was, and why it was important. We also took some notes about a history of color, its types and its usage. Understanding this was useful to help us know more about color, and by learning enough from our presentations, we were able to do projects such as naming our own colors or classifying them by their various aspects.  </p>')
+        document.write('<a href = "Digital Portfolio Main Page.html"><p>Click this to return to the home page.</p></a>')
+
+      } else if (input.value === "" || input.value.toLowerCase().startsWith(" ")) {
+          alert("Please fill in this field.")
+          alert("You can search for the following results: 'sketchbook' or 'sketchbook cover', 'color research' or 'color research handout', for my color notes by typing 'color notes', or for a list of all my project by typing 'Project List'");
+
+      } else {
+        alert('"' + input.value + '" does not seem to be one of my projects.')
+        alert("You can search for the following results: 'sketchbook' or 'sketchbook cover', 'color research' or 'color research handout', or my color notes by typing 'color notes'.");
+}
+
+})
+
+  </script>
+  </body>
+</html>
