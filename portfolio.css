@@ -1,0 +1,49 @@
+#navbar {
+font-family: fantasy;
+font-size: 100%;
+color: black;
+
+}
+
+#main{
+  color:white;
+  font-family: Times;
+  text-align: center;
+  font-size: 120%;
+
+}
+
+body {
+background-image: url('file:///Users/kabirsamsi/Desktop/Screen%20Shot%202018-09-19%20at%202.40.50%20PM.png');
+}
+
+#sub {
+  font-family: cursive;
+}
+
+a {
+color: white;
+}
+
+.artworkImgs {
+border-color: red;
+
+}
+
+.descLinks {
+font-family: Times;
+font-size: 120%;
+color: lightgray;
+
+}
+
+#cy1Head {
+color: red;
+
+}
+
+#homeHead {
+color: red;
+
+
+}
