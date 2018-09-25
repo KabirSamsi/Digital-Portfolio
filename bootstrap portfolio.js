@@ -4,6 +4,7 @@ const cy2 = document.getElementById('cy2');
 const cy3 = document.getElementById('cy3');
 const cy4 = document.querySelector('#cy4');
 const cy5 = document.querySelector('#cy5');
+const biome = document.querySelector('#biome');
 
 home.addEventListener('mouseover', () => {
   home.style.color = 'blue';
@@ -56,5 +57,15 @@ cy5.addEventListener('mouseover', () => {
 
 cy5.addEventListener('mouseout', () => {
   cy5.style.color = 'black';
+
+})
+
+
+biome.addEventListener('mouseover', () => {
+  biome.style.color = 'blue';
+})
+
+biome.addEventListener('mouseout', () => {
+  biome.style.color = 'black';
 
 })
