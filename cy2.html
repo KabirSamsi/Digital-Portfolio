@@ -80,7 +80,7 @@
   const viewAll = document.getElementById('viewAll');
   
   viewAll.addEventListener('click', ()=> {
-    const text = document.querySelector('article');
+    let text = document.querySelector('article');
     let h2 = document.createElement('h2')
     text.appendChild('h2');
     h2.style.color = "red";
