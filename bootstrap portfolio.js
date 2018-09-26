@@ -70,6 +70,10 @@ biome.addEventListener('mouseout', () => {
 
 })
 
+home.addEventListener('click', () => {
+  home.style.color = 'red';
+})
+
 cy1.addEventListener('click', () => {
   cy1.style.color = 'red';
 })
