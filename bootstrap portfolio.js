@@ -70,12 +70,26 @@ biome.addEventListener('mouseout', () => {
 
 })
 
-cy3.addEventListener('click', () => {
-  cy3.style.color = 'black';
+cy1.addEventListener('click', () => {
   cy1.style.color = 'red';
+})
+
+cy2.addEventListener('click', () => {
   cy2.style.color = 'red';
+})
+
+cy3.addEventListener('click', () => {
   cy3.style.color = 'red';
+})
+
+cy4.addEventListener('click', () => {
   cy4.style.color = 'red';
+})
+
+cy5.addEventListener('click', () => {
   cy5.style.color = 'red';
+})
+
+biome.addEventListener('click', () => {
   biome.style.color = 'red';
 })
