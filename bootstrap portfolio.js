@@ -69,3 +69,8 @@ biome.addEventListener('mouseout', () => {
   biome.style.color = 'black';
 
 })
+
+cy3.addEventListener('click', () => {
+  cy3.style.color = 'black';
+
+})
