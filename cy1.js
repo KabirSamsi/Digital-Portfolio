@@ -2,7 +2,7 @@ const cy1 = document.querySelector('#cyOne');
 const sketch = document.getElementById('sketch');
 const handout = document.getElementById('hand');
 const swatch = document.getElementById('swatch');
-const table = document.querySelector('table');
+const table = document.querySelector('#table');
 
 cy1.addEventListener('mouseover', () => {
   cy1.style.color = 'blue';
