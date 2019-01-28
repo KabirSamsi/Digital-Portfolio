@@ -86,3 +86,19 @@ font-family: Times;
   ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
+
+#pw {
+  width: 550px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#confirm {
+  color: black;
+  background-color: aqua;
+  width: 200px;
+  border-color: darkblue;
+  height: 35px;
+  font-size: 18px;
+}
