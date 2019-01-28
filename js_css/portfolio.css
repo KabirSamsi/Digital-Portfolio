@@ -98,7 +98,8 @@ font-family: Times;
   color: black;
   background-color: aqua;
   width: 200px;
-  border-color: darkblue;
+  border-color: green;
+  border-width: 2px;
   height: 35px;
   font-size: 18px;
 }

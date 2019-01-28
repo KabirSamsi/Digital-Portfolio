@@ -11,7 +11,7 @@ confirm.addEventListener("click", () => {
     } else if (pw.value == password) {
         confirm.innerHTML = '<a href="home.html">Sign in</a>';
         confirm.style.backgroundColor = "green";
-        confirm.style.borderColor = "green";
+        confirm.style.borderColor = "blue";
         confirm.style.width =  "100px";
 
     }
