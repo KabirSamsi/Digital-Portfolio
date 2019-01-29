@@ -4,8 +4,8 @@ const body = document.querySelector("body")
 let passwords = [
   ["Enter the original name of Art C's sculpture", "childatplay"],
   ["Which artist sculpted The Bronze David?","donatello"],
-  ["Which period was after the Classical Era?", "hellenistic"],
-  ["What are blind, one-line sketches called?", "contoursketches"]
+  ["Fill in the blank: archaic, classical, ___", "hellenistic"],
+  ["Blind one-line sketches are called ___ sketches", "contour"]
 ]
 
 let random = Math.floor(Math.random()*passwords.length);
