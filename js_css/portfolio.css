@@ -92,6 +92,8 @@ font-family: Times;
   height: 50px;
   text-align: center;
   font-size: 18px;
+  border-color: black;
+  border-width: 1.5px;
 }
 
 #confirm {
