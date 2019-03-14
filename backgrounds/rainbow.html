@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rainbow Colors</title>
+  </head>
+  <body>
+    <canvas></canvas>
+    <script>
+        const canvas = document.querySelector('canvas')
+        const width = canvas.width = window.innerWidth
+        const height = canvas.height = window.innerHeight + 400
+
+        let ctx = canvas.getContext('2d')
+
+        class Square {
+          constructor(color, x, y) {
+            this.color = color
+            this.x = x
+            this.y = y
+          }
+
+          create() {
+            ctx.fillStyle = this.color
+            ctx.fillRect(this.x, this.y, 5,5)
+          }
+        }
+
+        value = 40
+        for (let i = 0; i < width; i +=5) {
+          for (let j = 0; j < height*2; j += 5) {
+            let square = new Square(`rgb(${i/5},${j/5}, ${value})`, i, j)
+            square.create()
+          }
+        }
+
+    </script>
+  </body>
+</html>

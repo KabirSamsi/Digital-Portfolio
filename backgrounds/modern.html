@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Perspective Image</title>
+  </head>
+  <body>
+    <canvas></canvas>
+    <script>
+
+      const canvas = document.querySelector('canvas')
+      const width = canvas.width = window.innerWidth
+      const height = canvas.height = window.innerHeight
+      let ctx = canvas.getContext('2d')
+      colors = ["red", "blue", "black", "green"]
+
+      class Rect {
+
+        constructor(x, y, width, height, color) {
+          this.x = x
+          this.y = y
+          this.width = width
+          this.height = height
+          this.color = color
+        }
+
+        create() {
+          ctx.strokeStyle = this.color
+          ctx.lineWidth = 2
+          ctx.strokeRect(this.x, this.y, this.width, this.height)
+        }
+      }
+
+      square_width = width-120
+      square_height = height-105
+      squareX = 60
+      squareY = 52.5
+      color_index = 4
+
+      while (squareX < width/2 && squareY < 410) {
+        square = new Rect(squareX, squareY, square_width, square_height, colors[color_index%4])
+        square.create()
+        squareX += 60
+        squareY += 52.5
+        square_width -= 120
+        square_height -= 105
+        color_index ++
+      }
+
+
+    </script>
+  </body>
+</html>

@@ -4,7 +4,8 @@ const home = document.querySelector('#home'),
   cy3 = document.querySelector('#cy3'),
   cy4 = document.querySelector('#cy4'),
   cy5 = document.querySelector('#cy5'),
-  biome = document.querySelector('#biome');
+  biome = document.querySelector('#biome'),
+  body = document.querySelector('body');
 
 const ael_on = (element) => element.addEventListener("mouseover", () => element.style.color = "blue"),
   ael_off = (element) => element.addEventListener("mouseout", () => element.style.color = "black"),
