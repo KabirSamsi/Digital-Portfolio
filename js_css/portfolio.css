@@ -14,7 +14,7 @@ color: black;
 }
 
 body {
-background-image: url("kabirsamsi.github.io/Digital-Portfolio/backgrounds/rainbow.png");
+background-image: url("https://raw.githubusercontent.com/KabirSamsi/Digital-Portfolio/master/backgrounds/rainbow.png");
 }
 
 #sub {
@@ -26,15 +26,18 @@ color: white;
 }
 
 .artworkImgs {
-border-color: red;
-spin: 360
+  border-color: red;
+  spin: 360;
+  margin-left: 50px;
+
 
 }
 
 .descLinks {
 font-family: Times;
-font-size: 120%;
+font-size: 20px;
 color: lightgray;
+margin-left: 140px;
 
 }
 
@@ -117,4 +120,67 @@ font-family: Times;
 p {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.space {
+  margin-left: 85px;
+}
+
+.space_img {
+  margin-left: 50px;
+}
+
+#first {
+  margin-left: 125px;
+}
+
+#third {
+  margin-left: 175px;
+}
+
+#fourth {
+  margin-left: 200px;
+}
+
+#sculpture3 {
+  margin-right: 20px;
+}
+
+#sculpt3 {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+#still {
+  margin-left: 125px;
+}
+
+#art {
+  margin-left: 100px;
+}
+
+#con {
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+#con2 {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+#first_link, #second_link, #third_link, #fourth_link {
+  margin-left: 110px;
+}
+
+#fourth_link {
+  margin-left: 70px;
+}
+
+#first_img {
+  margin-left: 80px;
+}
+
+#first_perspective {
+  margin-left: 85px;
 }
