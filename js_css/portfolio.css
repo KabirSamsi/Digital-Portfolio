@@ -13,8 +13,19 @@ color: black;
 
 }
 
+#dropdownMenuButton {
+  border-radius: 0px;
+  margin-left: 20px;
+  background-color: orange;
+  color: black;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
 body {
-background-image: url("https://raw.githubusercontent.com/KabirSamsi/Digital-Portfolio/master/backgrounds/rainbow.png");
+  background-image: url("https://raw.githubusercontent.com/KabirSamsi/Digital-Portfolio/master/backgrounds/rainbow.png");
+  background-size: cover;
+  font-family: Times;
 }
 
 #sub {
@@ -41,14 +52,8 @@ margin-left: 140px;
 
 }
 
-#thingHead {
-color: red;
-
-}
-
-#homeHead {
-color: red;
-
+#thingHead, #homeHead {
+  color: darkblue;
 
 }
 
@@ -183,4 +188,8 @@ p {
 
 #first_perspective {
   margin-left: 85px;
+}
+
+#under {
+  font-size: 30px;
 }
