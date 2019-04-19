@@ -193,3 +193,15 @@ p {
 #under {
   font-size: 30px;
 }
+
+#main {
+  text-align: center;
+}
+
+#first_link_biome {
+  margin-left: 350px;
+}
+
+#first_image {
+  margin-left: 225px;
+}
